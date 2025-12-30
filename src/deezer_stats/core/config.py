@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     deezer_app_id: str = ""
     deezer_app_secret: str = ""
     deezer_redirect_uri: str = "http://localhost:8000/auth/callback"
+    deezer_access_token: str = ""  # Token temporaire pour les tests
 
 
 settings = Settings()

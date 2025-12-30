@@ -3,6 +3,7 @@
 from fastapi import FastAPI
 
 from deezer_stats import __version__
+from deezer_stats.api.deezer import router as deezer_router
 from deezer_stats.core.config import settings
 
 app = FastAPI(
@@ -10,6 +11,9 @@ app = FastAPI(
     version=__version__,
     description="Personal Deezer data exploration API",
 )
+
+# Enregistrement des routers
+app.include_router(deezer_router)
 
 
 @app.get("/")

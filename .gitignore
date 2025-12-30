@@ -62,3 +62,13 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Claude Code
+.claude/
+
+# Data dumps (personal data)
+*_dump.json
+*_sample.json
+
+# Additional secrets
+secrets*.env
